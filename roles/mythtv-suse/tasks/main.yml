@@ -55,12 +55,12 @@
   set_fact:
     zypper_pkg_lst:
       - '{{ zypper_pkg_lst }}'
-      - python-MySQL-python
+#     - python-MySQL-python # tumbleweed aliases this to python2-mysqlclient
       - python-lxml
       - python-urlgrabber
       - python-future
       - python-requests
-      - python-oauth
+#     - python-oauth
 
 - name: determine devel:languages:perl repository url (Leap)
   when: ansible_distribution == "openSUSE Leap"
