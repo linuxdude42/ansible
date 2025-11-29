@@ -22,6 +22,16 @@
 - name: Gather facts
   setup:
 
+# OpenBSD doesn't set distribution_major_version.
+- name: Find major version
+  set_fact:
+    major_version: "{{ ansible_distribution_version.split('.')[0] }}"
+  when: ansible_facts["distribution_major_version"] is not defined
+- name: Set major version
+  set_fact:
+    ansible_facts: "{{ ansible_facts | combine( { 'distribution_major_version' : major_version } ) }}"
+  when: ansible_facts["distribution_major_version"] is not defined
+
 - name: '{{ instruction_text }}:'
   debug:
     msg:
