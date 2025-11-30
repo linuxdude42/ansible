@@ -1,0 +1,110 @@
+# v14
+
+---
+
+packages:
+#  - avahi-libdns
+  - autoconf
+  - automake
+  - ccache
+  - cmake
+  - exiv2
+  - faac
+  - fftw
+  - flac
+  - freetype2
+  - gcc10
+  - git
+  - gmake
+  - gnutls
+  - gperf
+#  - jackit
+  - lame
+  - libao-oss
+  - libass
+  - libbluray
+  - libcdio
+  - libcec
+#  - libdrm
+  - libhdhomerun
+  - libmpeg2
+  - libsamplerate
+  - libtool
+  - libv4l
+#  - libvdpau
+#  - libXinerama
+  - libvorbis
+  - libvpx
+#  - libXxf86vm
+  - libxml2
+  - libzip
+  - lzo
+  - MesaLib
+  - meson
+  - minizip
+  - nasm
+  - ninja-build
+  - openssl
+  - p5-DBD-mysql
+  - p5-DBI
+  - p5-Date-Manip
+  - p5-DateTime-Format-ISO8601
+  - p5-FindBin-libs
+  - p5-IO-Socket-INET6
+#  - p5-IPC-Cmd
+  - p5-Image-Size
+  - p5-JSON
+#  - p5-Net-UPnP
+  - p5-SOAP-Lite
+  - p5-XML-Simple
+  - p5-XML-XPath
+  - p5-libwww
+  - patch
+  - perl
+  - php84
+  - pkgconf
+  - pulseaudio
+  - py312-lxml
+  - py312-mysqlclient
+#  - py312-oauth
+  - py312-pip
+  - py312-pymysql
+  - py312-requests
+  - py312-setuptools
+  - py312-simplejson
+#  - py312-urlgrabber
+  - python312
+#  - sdl2
+  - soundtouch
+  - sqlite3
+  - subversion
+  - taglib
+#  - v4l_compat
+  - x264
+  - x265
+#  - xvid
+
+qt5_packages:
+  - qt5-qtbase
+#  - qt5-gui
+  - qt5-qtmultimedia
+#  - qt5-network
+#  - qt5-opengl
+#  - qt5-sql
+#  - qt5-widgets
+#  - qt5-xml
+#  - qt5-buildtools
+#  - qt5-qmake
+  - qt5-qtscript
+  - qt5-mysql
+#  - qt5-sqldrivers-sqlite3
+#  - qt5-testlib
+#  - qt5-scripttools
+
+qt6_packages:
+  - qt6-qtbase
+#  - qt6-base_sqldriver-mysql
+#  - qt6-base_sqldriver-sqlite
+
+...
+
