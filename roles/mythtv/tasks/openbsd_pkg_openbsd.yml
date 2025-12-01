@@ -1,0 +1,11 @@
+---
+
+- name: OpenBSD doesn't support qt5
+  ansible.builtin.debug:
+    msg: OpenBSD doesn't support qt5. Forcing qt6.
+  when: qt6 is undefined or not qt6
+
+- name: Forcing qt6 install
+  set_fact:
+    qt6: true
+  when: qt6 is undefined or not qt6
